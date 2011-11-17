@@ -3,9 +3,9 @@
 Plugin Name: Login Email Sync
 Plugin URI: http://alessandroraffa.eu/wordpress-plugins/
 Description: This plugin simply keeps synced username with email.
-Version: 0.9
+Version: 1.0
 Author: Alessandro Raffa
-Author URI: http://www.alessandroraffa.eu
+Author URI: http://alessandroraffa.eu
 */
 
 /*  Copyright 2011  Alessandro Raffa  (email: contact@alessandroraffa.eu)
@@ -106,6 +106,7 @@ register_activation_hook( __FILE__, 'arit_login_email_sync_install' );
 
 add_action( 'init', 'arit_login_email_sync_init' );
 add_action( 'admin_menu', 'arit_login_email_sync_admin_menu' );
+add_action( 'user_register', 'arit_login_email_sync_action' );  // Ethan Shaw suggested feature
 add_action( 'profile_update', 'arit_login_email_sync_action' );
 
 register_deactivation_hook( __FILE__, 'arit_login_email_sync_uninstall' );

@@ -4,7 +4,7 @@ Donate link: http://alessandroraffa.eu
 Tags: login, email
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 0.9
+Stable tag: 1.0
 
 This plugin simply keeps synced username with email. Just activate it: it's ready-to-use, no options needed.
 
@@ -33,10 +33,16 @@ the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1
 
 == Changelog ==
 
+= 1.0 =
+* Added sync username with email upon registration (Ethan Shaw suggested feature)
+
 = 0.9 =
 * First public release
 
 == Upgrade Notice ==
+
+= 1.0 =
+Backup your users table before upgrading
 
 = 0.9 =
 First public release
